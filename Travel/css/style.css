@@ -1,0 +1,202 @@
+ul {  
+    margin-top: 21px;
+    list-style: none;
+}
+
+.a1 {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    float: left;
+    margin-left: 20px;
+}
+
+.a2 {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    float: right;
+    margin-right: 20px;
+}
+nav {
+    background-color: white;
+    color: #000;
+    overflow: auto;
+}
+
+section.pa1 {
+    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/ltp/img/lodging.png");
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: 100%;
+    height: 300px;
+    padding-top: 7%;
+    padding-left: 4%;
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
+.se2 {
+    background-color: #efefef;
+    padding: 2% 5%;
+}
+
+#p1 {
+    margin-top: 0px;
+    font-size: 30px;
+}
+
+.container {
+    overflow: auto;
+}
+
+img.gallery {
+    margin-bottom: 7%;
+    width: 100%;
+}
+
+div.galleryleft {
+    margin-right: 3%;
+    float: left;
+    width: 31%;
+}
+
+div.gallerycenter {
+    margin-right: 3%;
+    float: left;
+    width: 31%;
+}
+
+div.gallerylast {
+    float: left;
+    width: 31%;
+}
+
+footer {
+    background-color: #efefef;
+    overflow: auto;
+    padding: 2% 5%;
+}
+
+.se31 {
+    margin-right: 3%;
+    float: left;
+    width: 31%;
+}
+
+.se3 {
+    margin-right: 3%;
+    float: left;
+    width: 31%;
+}
+
+.se32 {
+    float: left;
+    width: 31%;
+}
+
+.banner {
+    background-image: url();
+}
+
+@media screen and (max-width: 992px) {
+    nav {
+        background-color: rgb(44, 42, 42);
+        height:60px;
+        overflow: auto;
+    }
+    .a1 {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        float: left;
+        margin-left: 20px;
+    }
+    
+    .a2 {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        float: right;
+        margin-right: 20px;
+    }
+    section.pa1 {
+        background-image: none;
+        height: 250px;
+    }
+    h1 {
+        color: rgb(44, 42, 42);
+        margin-bottom: 5%
+    }
+    #p1{
+        font-size: 15px;
+        color: rgb(44, 42, 42);
+        padding-bottom: 5%;
+        border-bottom: solid black 1px;
+    }
+    div.galleryleft {
+        width: 48%;
+    }
+    div.gallerylast {
+        width: 50%;
+    }
+    div.gallerycenter {
+        width: 48%;
+        margin-right: 0%;
+    }
+    .se31, .se3, .se32 {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    h2 {
+        color: rgb(44, 42, 42);
+    }
+    p{
+        font-size: 15px;
+        color: rgb(44, 42, 42);
+    }
+    #p1{
+        border-bottom: solid black 0px;
+    }
+    nav {
+        background-color: rgb(44, 42, 42);
+        overflow: auto;
+        height: 60px;
+    }
+    .a1 {
+        float: left;
+        width: 15%;
+        margin-left: 4%;
+    }
+    .a2 {
+        float: left;
+        width: 15%;
+        margin-left: 4%;
+        margin-right: 0%;
+    }
+
+    div.galleryleft {
+        width: 100%;
+    }
+    div.gallerylast {
+        width: 100%;
+        margin-right: 0%;
+    }
+    div.gallerycenter {
+        width: 100%;
+        margin-right: 0%;
+    }
+    .s32 {
+        float: left;
+        width: 100%;
+    }
+}
