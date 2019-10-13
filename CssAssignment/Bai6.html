@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bai 6</title>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body display: inline-block>
+  <div class="button_container">
+    <button id="button1" onmouseover="hoverButton1()" onmouseout="outButton(this.id)">Green</button>
+    <button id="button2" onmouseover="hoverButton2()" onmouseout="outButton(this.id)">Blue</button>
+    <button id="button3" onmouseover="hoverButton3()" onmouseout="outButton(this.id)">Red</button>
+    <button id="button4" onmouseover="hoverButton4()" onmouseout="outButton(this.id)">Grey</button>
+    <button id="button5" onmouseover="hoverButton5()" onmouseout="outButton(this.id)">Black</button>
+  </div>
+  <script>
+    var button1 = document.getElementById("button1");
+    var button2 = document.getElementById("button2");
+    var button3 = document.getElementById("button3");
+    var button4 = document.getElementById("button4");
+    var button5 = document.getElementById("button5");
+    function hoverButton1() {
+      button1.style.backgroundColor = "#4CAF50";
+      button1.style.color = "white";
+    }
+    function hoverButton2() {
+      button2.style.backgroundColor = "rgb(7, 122, 230)";
+      button2.style.color = "white";
+    }
+    function hoverButton3() {
+      button3.style.backgroundColor = "red";
+      button3.style.color = "white";
+    }
+    function hoverButton4() {
+      button4.style.backgroundColor = "lightgray";
+      button4.style.color = "white";
+    }
+    function hoverButton5() {
+      button5.style.backgroundColor = "rgb(63, 59, 59)";
+      button5.style.color = "white";
+    }
+    function outButton(id) {
+      // var id = $(elem).attr("el");
+      var button = document.getElementById(id);
+      button.style.backgroundColor = "white";
+      button.style.color = "black";
+    }
+
+  </script>
+</body>
+
+</html>
