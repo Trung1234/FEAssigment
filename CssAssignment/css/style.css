@@ -2,15 +2,11 @@
 
   .container {
       padding: 16px;
+      border: solid 1px rgb(242, 242, 242);
+      border-radius: 4px;
       background-color: rgb(242, 242, 242);
   }
 
-  /* Bordered form
-
-form {
-    border: 3px solid  lightgrayl
-    padding: 14px 20px;
-} */
 
   /* Set a style for all buttons */
 
@@ -72,7 +68,7 @@ form {
   }
 
   /* css bai 6- button hover */
- 
+
   #button1 {
       background-color: white;
       border: none;
@@ -146,4 +142,38 @@ form {
       border-radius: 4px;
       cursor: pointer;
       margin: 10px;
+  }
+
+  /*menu css - bai7*/
+.body_menu{
+    margin: 0px;
+}
+.menu_contain{
+    background-color: #283747;
+}
+  .menu {
+      margin: 0px;
+      /* display: inline-block; */
+      overflow: auto;
+      color: white;
+      background-color: #283747;
+  }
+
+  .menu a {   
+      background-color: #283747;
+      float: left;
+      color: white;
+      text-decoration: none;
+      padding: 18px 26px;
+      box-sizing: border-box;
+  }
+
+  .menu a.active {
+      background-color: green;
+      
+      
+  }
+
+  .menu a:hover:not(.active) {
+      background-color: black;
   }
