@@ -30,7 +30,7 @@ section div.pa1 {
     background-repeat: no-repeat;
     /* Do not repeat the image */
     background-size: 35%;
-    height: 20px;
+    height: 15px;
     padding-top: 18%;
     margin-bottom: 0px;
     color: white;
@@ -51,7 +51,7 @@ input[type=text] {
     border-radius: 20px;
     font-size: 20px;
     background-color: white;
-    background-image: url('/img/search.jpg');
+    background-image: url('https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png');
     background-position: left; 
     background-size: 25px;
     box-shadow: 1px 1px 2px 1px whitesmoke;
@@ -78,7 +78,7 @@ div.link > div{
 }
 div.link  img{
     background-color: rgba(211, 211, 211, 0.973);
-    width: 50px;
+    width: 40px;
     border: solid white 2px;
     border-radius: 50%;
 }
