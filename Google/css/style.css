@@ -1,16 +1,15 @@
 ul {  
-    margin-top: 21px;
     list-style: none;
     display: inline;
 }
 
-.a1 {
+/* .a1 {
     text-decoration: none;
     color: black;
     text-transform: uppercase;
     float: left;
     margin-left: 20px;
-}
+} */
 img.avatar{
     width: 40px;
      border-radius: 50%;
@@ -30,39 +29,78 @@ nav {
     overflow: auto;
 }
 
-section.pa1 {
+section div.pa1 {
     background-image: url("https://cdn.vox-cdn.com/thumbor/Pkmq1nm3skO0-j693JTMd7RL0Zk=/0x0:2012x1341/1200x800/filters:focal(0x0:2012x1341)/cdn.vox-cdn.com/uploads/chorus_image/image/47070706/google2.0.0.jpg");
     background-position: center;
     /* Center the image */
     background-repeat: no-repeat;
     /* Do not repeat the image */
-    background-size: 30%;
-    height: 300px;
-    padding-top: 12%;
+    background-size: 28%;
+    height: 20px;
+    padding-top: 18%;
+    margin-bottom: 0px;
     color: white;
 }
 .title{
-    background-color: rgb(68, 60, 60);
+    background-color: white;
     padding-left: 4px;
+    
     padding-right: 4px;
+    color: black;
     box-sizing: border-box;
     border: white solid 3px;
     border-radius: 10px;
 }
+input[type=text] {
+    width: 730px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: white;
+    background-image: url('/img/search.jpg');
+    background-position: left; 
+    background-size: 30px;
+    box-shadow: 1px 1px 1px 1px grey;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+  }
+
 div.searchbar{
     text-align: center;
 }
 div.link{
-    text-align: center;
-    overflow: auto;
+    width: 740px; /*can be in percentage also.*/
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
 }
 div.link > div{
+    text-align: center;
+    /* position: relative; */
     display: inline-block;
+    margin: 3%;
 }
 div.link  img{
-    width: 30px;
+    background-color: rgba(211, 211, 211, 0.973);
+    width: 50px;
+    border: solid white 2px;
+    border-radius: 50%;
 }
-h1 {
+footer{
+   border-bottom: 0px;
+}
+.footing{
+    height: 5px;
+    width: 60px;
+    background-color: white;
+    color: blue;
+   
+    border: 1px solid whitesmoke;
+    border-radius: 20px;
+}
+/* h1 {
     font-size: 50px;
     margin-bottom: 0px;
 }
@@ -223,5 +261,4 @@ footer {
     .s32 {
         float: left;
         width: 100%;
-    }
-}
+    } */
