@@ -47,13 +47,14 @@ section div.pa1 {
 input[type=text] {
     width: 50%;
     box-sizing: border-box;
-    border: 3px solid whitesmoke;
+    border: 1px solid whitesmoke;
     border-radius: 20px;
     font-size: 20px;
     background-color: white;
     background-image: url('/img/search.jpg');
     background-position: left; 
     background-size: 25px;
+    box-shadow: 1px 1px 2px 1px whitesmoke;
     /* box-shadow: 1px 1px 1px 1px grey; */
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
