@@ -23,6 +23,7 @@ img.avatar{
 }
 
 nav {
+    margin-top: 1%;
     background-color: white;
     color: #000;
     vertical-align: middle;
@@ -35,7 +36,7 @@ section div.pa1 {
     /* Center the image */
     background-repeat: no-repeat;
     /* Do not repeat the image */
-    background-size: 28%;
+    background-size: 25%;
     height: 20px;
     padding-top: 18%;
     margin-bottom: 0px;
