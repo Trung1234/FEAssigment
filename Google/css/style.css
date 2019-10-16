@@ -86,11 +86,22 @@ footer{
    border-bottom: 0px;
 }
 .footing{
-    height: 5px;
-    width: 60px;
-    background-color: white;
+    align-items: center;
+    border: whitesmoke 2px solid;
+    border-radius: 50px;
+    bottom: 16px;
+    display: flex;
+    height: 32px;
+    justify-content: center;
+    min-width: 32px;
+    position: fixed;
+    right: 16px;
+    width: fit-content;
+}
+#bg-text{
     color: blue;
-   
-    border: 1px solid whitesmoke;
-    border-radius: 20px;
+    font-size: 17px;
+    padding-inline-end: 12px;
+    padding-inline-start: 8px;
+    user-select: none;
 }
