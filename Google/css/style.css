@@ -25,12 +25,13 @@ nav {
 
 section div.pa1 {
     background-image: url("https://cdn.vox-cdn.com/thumbor/Pkmq1nm3skO0-j693JTMd7RL0Zk=/0x0:2012x1341/1200x800/filters:focal(0x0:2012x1341)/cdn.vox-cdn.com/uploads/chorus_image/image/47070706/google2.0.0.jpg");
+    
     background-position: center;
     /* Center the image */
     background-repeat: no-repeat;
     /* Do not repeat the image */
-    background-size: 35%;
-    height: 15px;
+    background-size: 30%;
+    height: 10px;
     padding-top: 18%;
     margin-bottom: 0px;
     color: white;
@@ -51,7 +52,8 @@ input[type=text] {
     border-radius: 20px;
     font-size: 20px;
     background-color: white;
-    background-image: url('https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png');
+    /* background-image: url('https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png'); */
+    background-image: url('../img/search.png');
     background-position: left; 
     background-size: 25px;
     box-shadow: 1px 1px 2px 1px whitesmoke;
@@ -64,24 +66,27 @@ div.searchbar{
     text-align: center;
 }
 div.link{
-    width: 740px; /*can be in percentage also.*/
+    width: 50%; /*can be in percentage also.*/
     height: auto;
     margin: 0 auto;
-    padding: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
     position: relative;
 }
+
 div.link > div{
     text-align: center;
     /* position: relative; */
     display: inline-block;
-    margin: 3%;
+    margin: 2%;
 }
 div.link  img{
     background-color: rgba(211, 211, 211, 0.973);
-    width: 40px;
+    width: 35px;
     border: solid white 2px;
     border-radius: 50%;
 }
+/* footer area */
 footer{
    border-bottom: 0px;
 }
@@ -93,10 +98,15 @@ footer{
     display: flex;
     height: 32px;
     justify-content: center;
-    min-width: 32px;
+    min-width: 40px;
     position: fixed;
     right: 16px;
+    box-shadow: 1px 1px 2px 1px whitesmoke;
     width: fit-content;
+}
+img.note{
+    width : 26px;
+    height: 15px;
 }
 #bg-text{
     color: blue;
