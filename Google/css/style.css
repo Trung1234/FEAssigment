@@ -35,17 +35,16 @@ section div.pa1 {
     /* Do not repeat the image */
     background-size: 30%;
     height: 10px;
-    padding-top: 18%;
-    margin-bottom: 10px;
+    padding-top: 15%;
     color: white;
 }
 .title{
-    background-color: white;
+    /* background-color: white; */
     padding-left: 4px;   
     padding-right: 4px;
     color: black;
     box-sizing: border-box;
-    border: white solid 3px;
+    /* border: white solid 3px; */
     border-radius: 10px;
 }
 input[type=text] {
@@ -82,10 +81,11 @@ div.link{
 }
 div.link div:hover {
     background-color: #F2F2F2;
-    border: 1px solid #F2F2F2;
 }
 div.link > div{
     width: 24%;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
     /* position: relative; */
     display: inline-block;
