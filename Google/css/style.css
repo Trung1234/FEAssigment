@@ -7,12 +7,16 @@ ul {
     width: 40px;
     border-radius: 50%;
 }
-.heading {  
-    text-decoration: none;
+.heading {    
     color: black;
     float: right;
-    margin-right: 20px;
-    
+    margin-right: 20px;   
+}
+.heading a{
+    text-decoration: none;
+}
+.heading a:hover{
+    text-decoration: underline;
 }
 .avatar:hover {
     background-color: #F2F2F2;
@@ -27,8 +31,7 @@ nav {
 }
 
 section div.pa1 {
-    background-image: url("https://cdn.vox-cdn.com/thumbor/Pkmq1nm3skO0-j693JTMd7RL0Zk=/0x0:2012x1341/1200x800/filters:focal(0x0:2012x1341)/cdn.vox-cdn.com/uploads/chorus_image/image/47070706/google2.0.0.jpg");
-    
+    background-image: url("https://cdn.vox-cdn.com/thumbor/Pkmq1nm3skO0-j693JTMd7RL0Zk=/0x0:2012x1341/1200x800/filters:focal(0x0:2012x1341)/cdn.vox-cdn.com/uploads/chorus_image/image/47070706/google2.0.0.jpg");   
     background-position: center;
     /* Center the image */
     background-repeat: no-repeat;
@@ -51,7 +54,7 @@ input[type=text] {
     width: 50%;
     box-sizing: border-box;
     border: 1px solid whitesmoke;
-    border-radius: 20px;
+    border-radius: 40px;
     font-size: 20px;
     background-color: white;
     /* background-image: url('https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png'); */
@@ -83,7 +86,7 @@ div.link div:hover {
     background-color: #F2F2F2;
 }
 div.link > div{
-    width: 24%;
+    width: 18%;
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
@@ -134,13 +137,17 @@ footer{
 }
 
 @media screen and (max-width: 992px) {
+    
     section div.pa1 {
 
         background-position: center;
         background-size: 50%;
     }
+    div.link > div{
+        width: 24%;
+    }
     input[type=text] {
-        width: 60%;
+        width: 70%;
     }
     div.link{
         width: 80%; 
@@ -149,6 +156,9 @@ footer{
 @media screen and (max-width: 768px) {
     section div.pa1 {
         background-position: center;
+    }
+    div.link > div{
+        width: 30%;
     }
     input[type=text] {
         width: 80%;
