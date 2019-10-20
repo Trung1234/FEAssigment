@@ -1,48 +1,66 @@
 /* reset css */
-*{
-    margin :0px;
-    padding :0px;
+
+* {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
 /* css for header */
-#heading{
+
+#heading {
     margin: 25px 50px;
     overflow: auto;
 }
+
 @font-face {
     font-family: monte;
-    src: url("MontserratAlternates-Black.otf");
+    src: url("Montserrat-Medium.otf");
 }
-#logo{
+
+#logo {
     float: left;
 }
-#heading  ul{
+
+#heading ul {
     float: right;
 }
+
 li {
     margin-right: 10px;
     list-style: none;
     display: inline-block;
 }
-a{
-    font-size: 15px;
+
+a {
+    font-size: 80%;
     font-family: monte;
     color: black;
     text-decoration: none;
     text-transform: uppercase;
 }
+
 /* css for section */
-.section-home{
-    margin: 25px;
+
+.section-home {
+    font-family: monte;
+    padding: 35px;
     text-align: center;
-vertical-align: middle;
+    vertical-align: middle;
+    background-color: #F6F6F6;
 }
-.gallery{
+.section-home p{  
+    margin-top: 10px;
+    font-size: 13px;
+   color: #C6C6C6;
+}
+
+.gallery {
     border: 0px;
-    
+    height: 300px;
 }
-.gallery img{
+
+.gallery img {
     border: 0px;
     width: 25%;
     height: 300px;
@@ -50,15 +68,24 @@ vertical-align: middle;
 }
 
 /* css for footer */
-footer{
+
+footer {
+    height: 200px;
+    padding: 60px 75px;
     color: white;
     background-color: #141414;
 }
-.footer-container{
+
+.footer-container {
     display: flex;
     justify-content: space-between;
 }
+
 .footer-container2 {
     display: flex;
     justify-content: center;
-  }
+}
+
+.footer-container2 div {
+    margin: 10px;
+}
