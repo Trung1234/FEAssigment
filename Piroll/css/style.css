@@ -5,7 +5,10 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
+@font-face {
+    font-family: monte;
+    src: url("Montserrat-Medium.otf");
+}
 /* css for header */
 
 #heading {
@@ -13,10 +16,7 @@
     overflow: auto;
 }
 
-@font-face {
-    font-family: monte;
-    src: url("Montserrat-Medium.otf");
-}
+
 
 #logo {
     float: left;
@@ -42,17 +42,20 @@ a {
 
 /* css for section */
 
-.section-home {
-    font-family: monte;
-    padding: 35px;
-    text-align: center;
-    vertical-align: middle;
+section {
     background-color: #F6F6F6;
+    font-family: monte;
+    padding-top: 40px;
 }
-.section-home p{  
+section p {
     margin-top: 10px;
     font-size: 13px;
-   color: #C6C6C6;
+    color: #C6C6C6;
+}
+/* css for home */
+.section-home {
+    text-align: center;
+    vertical-align: middle;
 }
 
 .gallery {
@@ -66,14 +69,52 @@ a {
     height: 300px;
     float: left;
 }
-
+/* css for contact */
+.section-contact{
+    padding: 4%;
+    height: 500px;
+    overflow: auto;
+    /* display: flex;
+    justify-content: space-around; */
+}
+.section-contact>div{
+    float: left;
+    width: 45%;
+    margin: 1%;
+}
+.section-contact strong{
+    font-weight: bold;
+    color: black;
+}
+.section-contact input[type=text]{
+    padding: 10px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.section-contact .title{
+    width: 100%;
+}
+.section-contact .name{
+    float: left;
+    width: 47%;
+    margin-right: 3%;
+}
+.section-contact .mail{
+    float: left;
+    width: 47%;
+    margin-left: 3%;
+}
 /* css for footer */
 
 footer {
     height: 200px;
-    padding: 60px 75px;
+    padding: 50px 75px;
     color: white;
     background-color: #141414;
+}
+
+footer p {
+    margin-bottom: 4px;
 }
 
 .footer-container {
