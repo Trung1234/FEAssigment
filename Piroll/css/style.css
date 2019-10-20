@@ -14,6 +14,7 @@
 #heading {
     margin: 25px 50px;
     overflow: auto;
+
 }
 
 #logo {
@@ -53,7 +54,7 @@ section p {
 }
 /* css for home */
 .section-home {
-    padding: 45px 50px;
+    padding: 75px 50px;
     text-align: center;
     vertical-align: middle;
 }
@@ -73,7 +74,7 @@ section p {
 .section-contact{
     padding: 4%;
     padding-top: 40px;
-    height: 950px;
+    height: 980px;
     overflow: auto;
     /* display: flex;
     justify-content: space-around; */
@@ -112,13 +113,17 @@ div.contact > div {
 .section-contact textarea{  
     padding: 13px;
     width: 100%;
+    font-size: 14px;
     margin-bottom: 10px;
 }
 .section-contact button{
     background-color: #10C9C3;
     color: white;
     border: 0px;
-    padding: 12px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding: 16px 25px;
 }
 .section-contact .frame{
     display: inline-block;
@@ -152,10 +157,18 @@ div.detail > div {
     font-weight: bold;
     color: black;
 }
-.section-single img{
+.section-single strong{
+    font-weight: bold;
+    color: black;
+}
+div.single img{
     width: 100%;
     height: 100%;
 }
+/* .section-single img{
+    width: 100%;
+    height: 100%;
+} */
 
 .section-navigation{
     background-color: white;  
@@ -175,6 +188,64 @@ div.detail > div {
 .section-navigation img{
     margin: 5px 0px ;
     color: black;
+}
+/* css for about */
+.section-about{
+    padding: 75px 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+.section-experience{
+    background-color: #10C9C3;
+    height: 200px;
+    padding: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.section-experience > div.experience{
+    overflow: auto;
+}
+div.experience i{
+    float: left;
+    color: white;
+}
+div.experience p{
+    float: left;
+    color: white;
+    text-transform: uppercase;
+}
+.signature{
+    margin-top: 10px;
+    height: 70px;
+    width: 200px;
+}
+.section-ameila{
+    background-image: url("../img/hagiang.jpg");
+    padding: 75px 50px;
+    text-align: center;
+    
+    vertical-align: middle;
+}
+.section-ameila h1{
+    color: white;
+}
+.section-ameila p{
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.section-home p{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.section-home button{
+    background-color: #10C9C3;
+    color: white;
+    border: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding: 16px 25px;
 }
 /* css for footer */
 
