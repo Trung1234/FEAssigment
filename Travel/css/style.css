@@ -1,3 +1,4 @@
+
 ul {  
     margin-top: 21px;
     list-style: none;
@@ -21,6 +22,7 @@ ul {
 nav {
     background-color: white;
     color: #000;
+    margin-bottom: 20px;
     overflow: auto;
 }
 
@@ -198,5 +200,18 @@ footer {
     .s32 {
         float: left;
         width: 100%;
+    }
+}
+@media screen and (max-width: 400px){
+    .a1 {
+        float: left;
+        width: 12%;
+        margin-left: 3%;
+    }
+    .a2 {
+        float: left;
+        width: 12%;
+        margin-left: 3%;
+        margin-right: 0%;
     }
 }
