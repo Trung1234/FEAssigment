@@ -16,8 +16,6 @@
     overflow: auto;
 }
 
-
-
 #logo {
     float: left;
 }
@@ -46,6 +44,7 @@ section {
     background-color: #F6F6F6;
     font-family: monte;
     padding-top: 40px;
+  
 }
 section p {
     margin-top: 10px;
@@ -72,12 +71,12 @@ section p {
 /* css for contact */
 .section-contact{
     padding: 4%;
-    height: 500px;
+    height: 900px;
     overflow: auto;
     /* display: flex;
     justify-content: space-around; */
 }
-.section-contact>div{
+.section-contact  div.contact{
     float: left;
     width: 45%;
     margin: 1%;
@@ -96,13 +95,33 @@ section p {
 }
 .section-contact .name{
     float: left;
-    width: 47%;
-    margin-right: 3%;
+    width: 49%;
+    margin-right: 1%;
 }
 .section-contact .mail{
     float: left;
-    width: 47%;
-    margin-left: 3%;
+    width: 49%;
+    margin-left: 1%;
+}
+
+.section-contact textarea{  
+    padding: 13px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.section-contact button{
+    background-color: #10C9C3;
+    color: white;
+    border: 0px;
+    padding: 12px 20px;
+}
+.section-contact .frame{
+    display: inline-block;
+    width: 100%;
+}
+.frame iframe{
+    width: 92.5%;
+    height :450px;
 }
 /* css for footer */
 
