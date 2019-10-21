@@ -197,19 +197,22 @@ div.single img{
 }
 .section-experience{
     background-color: #10C9C3;
-    height: 200px;
+    height: 150px;
     padding: 10%;
     display: flex;
     justify-content: space-between;
 }
 .section-experience > div.experience{
+    height: 100px;
     overflow: auto;
 }
-div.experience i{
+div.experience img{
+    color: white;
+    height: 50px;
     float: left;
     color: white;
 }
-div.experience p{
+div.experience div{
     float: left;
     color: white;
     text-transform: uppercase;
