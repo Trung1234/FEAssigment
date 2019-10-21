@@ -38,7 +38,9 @@ a {
     text-decoration: none;
     text-transform: uppercase;
 }
-
+a.this{
+    color: #10C9C3;
+}
 /* css for section */
 
 section {
@@ -197,24 +199,32 @@ div.single img{
 }
 .section-experience{
     background-color: #10C9C3;
-    height: 150px;
-    padding: 10%;
+    height: 250px;
+    padding: 75px 100px;
     display: flex;
     justify-content: space-between;
 }
 .section-experience > div.experience{
+    padding: 20px 0px;
     height: 100px;
     overflow: auto;
 }
 div.experience img{
     color: white;
-    height: 50px;
+    height: 40px;
     float: left;
     color: white;
+    margin: 10px;
 }
 div.experience div{
+    margin: 0px 10px;
     float: left;
+    vertical-align: middle;
+}
+div.experience p{
+    /* margin-bottom: 5px;; */
     color: white;
+    font-weight: bold;
     text-transform: uppercase;
 }
 .signature{
