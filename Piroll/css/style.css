@@ -233,6 +233,8 @@ div.experience p{
 }
 .section-ameila{
     background-image: url("../img/hagiang.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 75px 50px;
     text-align: center;   
     vertical-align: middle;
