@@ -363,13 +363,16 @@ footer p {
 }
 @media screen and (max-width: 768px) {
     .section-experience{
-        padding: 5% 20%;
+        padding: 5% 25%;
     }
     .section-experience > div.experience{
+        
         width: 100%;
         margin: 2%;
     }
-    
+    div.experience p{
+        font-size: 12px;
+    }
     
     .gallery img {
         width: 100%;
