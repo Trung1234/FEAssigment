@@ -14,7 +14,6 @@
 #heading {
     margin: 25px 50px;
     overflow: auto;
-
 }
 
 #logo {
@@ -53,6 +52,9 @@ section p {
     color: #C6C6C6;
 }
 /* css for home */
+.section-gallery{
+    overflow: auto;
+}
 .section-home {
     padding: 75px 50px;
     text-align: center;
@@ -264,8 +266,8 @@ div.experience p{
 
 footer {
     /* font-family: monte; */
-    height: 250px;
-    padding: 75px 75px;
+    /* height: 250px; */
+    padding: 50px 30px;
     color: white;
     background-color: #141414;
 }
@@ -288,16 +290,64 @@ footer p {
     margin: 0px 10px 10px 10px;
 }
 /* responsive */
+@media screen and (max-width: 1200px){
+    img.experience{
+        display: none;
+    }
+}
 @media screen and (max-width: 992px) {
     .gallery img {
-        width: 33%;
+        width: 50%;
     }
     .gallery {
         height: 200px;
     }
-}
-/* @media screen and (max-width: 768px) {
-    .gallery img {
+    .section-single  div.detail{
+        width: 100%;
+    }
+    .section-single  div.single{
+        width: 100%;
+    }
+    .section-contact {
+        padding: 4%;
+        height: 1300px;
+    }
+    .section-experience{
+        overflow: auto;
+    }
+    .section-contact  div.contact{
+        width: 90%;
+        margin: 3%;
+    }
+    .section-experience> div.experience{
+        float: left;
         width: 50%;
     }
-} */
+    div.experience p{
+        font-size: 12px;
+    }
+    .footer-container {
+        overflow: auto;
+    }
+    .footer-container > div{
+        float: left;
+        width: 50%;
+    }
+    .footer-container2{
+        float: left;
+        width: 50%;
+    }
+}
+@media screen and (max-width: 768px) {
+    
+    
+    
+    .gallery img {
+        width: 100%;
+    }
+    .footer-container > div{
+        float: left;
+        width: 100%;
+    }
+
+}
