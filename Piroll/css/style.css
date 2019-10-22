@@ -46,8 +46,6 @@ a.this{
 section {
     background-color: #F6F6F6;
     font-family: monte;
-    
-  
 }
 section p {
     margin-top: 10px;
@@ -209,7 +207,8 @@ div.single img{
     height: 100px;
     overflow: auto;
 }
-div.experience img{
+img.experience{
+    display: block;
     color: white;
     height: 40px;
     float: left;
@@ -235,8 +234,7 @@ div.experience p{
 .section-ameila{
     background-image: url("../img/hagiang.jpg");
     padding: 75px 50px;
-    text-align: center;
-    
+    text-align: center;   
     vertical-align: middle;
 }
 .section-ameila h1{
@@ -287,3 +285,20 @@ footer p {
 .footer-container2 div {
     margin: 0px 10px 10px 10px;
 }
+/* responsive */
+@media screen and (max-width: 992px) {
+    .gallery img {
+        width: 33%;
+    }
+    .gallery {
+        height: 200px;
+    }
+    img.experience {
+        
+    }
+}
+/* @media screen and (max-width: 768px) {
+    .gallery img {
+        width: 50%;
+    }
+} */
