@@ -199,14 +199,17 @@ div.single img{
 }
 .section-experience{
     background-color: #10C9C3;
-    height: 250px;
-    padding: 75px 100px;
-    display: flex;
-    justify-content: space-between;
+    /* height: 250px; */
+    padding: 5% 10%;;
+    overflow: auto;
+    /* display: flex;
+    justify-content: space-between; */
 }
 .section-experience > div.experience{
-    padding: 20px 0px;
-    height: 100px;
+    width: 25%;
+    /* padding: 15px 0px;
+    height: 150px; */
+    float: left;
     overflow: auto;
 }
 img.experience{
@@ -277,22 +280,37 @@ footer p {
 }
 
 .footer-container {
-    display: flex;
-    justify-content: space-between;
+    padding: 10px;
+    overflow: auto;
 }
-
-.footer-container2 {
-    display: flex;
-    justify-content: center;
+.footer-container .footer1{
+    width: 40%;
+    float: left;
 }
-
-.footer-container2 div {
-    margin: 0px 10px 10px 10px;
+.footer-container .footer2{
+    width: 20%;
+    float: left;
+}
+.footer-container .footer3{
+    width: 40%;
+    overflow: auto;
+    float: left;
+}
+.footer3 > div{
+    width: 20%;
+    float: left;
+}
+.footer3 > .media{
+    width: 20%;
+    float: right;
 }
 /* responsive */
 @media screen and (max-width: 1200px){
-    img.experience{
-        display: none;
+    .section-experience{
+        padding: 5% 15%;
+    }
+    .section-experience > div.experience{
+        width: 50%;
     }
 }
 @media screen and (max-width: 992px) {
@@ -312,21 +330,26 @@ footer p {
         padding: 4%;
         height: 1300px;
     }
-    .section-experience{
-        overflow: auto;
-    }
     .section-contact  div.contact{
         width: 90%;
         margin: 3%;
     }
-    .section-experience> div.experience{
-        float: left;
+    .footer-container .footer1{
         width: 50%;
+        margin-bottom: 5px;
     }
-    div.experience p{
-        font-size: 12px;
+    .footer-container .footer2{
+        width: 50%;
+        margin-bottom: 5px;
     }
-    .footer-container {
+    .footer-container .footer3{
+        width: 100%;
+        margin: 10px;
+    }
+    
+/*=====================Footer========================*/ 
+
+    /* .footer-container {
         overflow: auto;
     }
     .footer-container > div{
@@ -336,10 +359,16 @@ footer p {
     .footer-container2{
         float: left;
         width: 50%;
-    }
+    } */
 }
 @media screen and (max-width: 768px) {
-    
+    .section-experience{
+        padding: 5% 20%;
+    }
+    .section-experience > div.experience{
+        width: 100%;
+        margin: 2%;
+    }
     
     
     .gallery img {
