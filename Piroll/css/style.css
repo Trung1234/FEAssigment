@@ -66,12 +66,14 @@ section p {
     height: 300px;
 }
 
+
 .gallery img {
     border: 0px;
     width: 25%;
     height: 300px;
     float: left;
-}
+}  
+
 /* css for contact */
 .section-contact{
     padding: 4%;
@@ -265,11 +267,9 @@ div.experience p{
     margin-bottom: 10px;
     padding: 16px 25px;
 }
-/* css for footer */
+/*=====================Footer========================*/ 
 
 footer {
-    /* font-family: monte; */
-    /* height: 250px; */
     padding: 50px 30px;
     color: white;
     background-color: #141414;
@@ -346,29 +346,14 @@ footer p {
         width: 100%;
         margin: 10px;
     }
-    
-/*=====================Footer========================*/ 
-
-    /* .footer-container {
-        overflow: auto;
-    }
-    .footer-container > div{
-        float: left;
-        width: 50%;
-    }
-    .footer-container2{
-        float: left;
-        width: 50%;
-    } */
 }
 @media screen and (max-width: 768px) {
     .section-experience{
         padding: 5% 25%;
     }
-    .section-experience > div.experience{
-        
+    .section-experience > div.experience{       
         width: 100%;
-        margin: 2%;
+        margin: 10px;
     }
     div.experience p{
         font-size: 12px;
@@ -377,9 +362,21 @@ footer p {
     .gallery img {
         width: 100%;
     }
-    .footer-container > div{
-        float: left;
+    .footer-container{
+        text-align: center;
+    }
+    .footer1{
         width: 100%;
     }
-
+    .footer2{
+        width: 100%;
+    }
+    .footer3{
+        width: 100%;
+        overflow: auto;
+    }
+    .footer3 > div{
+        width: 30%;
+        float: left;
+    }
 }
