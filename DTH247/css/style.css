@@ -22,7 +22,7 @@
     vertical-align: middle;
 }
 
-input[type=text] {
+.search {
     width: 60%;
     vertical-align: middle;
     box-sizing: border-box;
@@ -40,7 +40,7 @@ input[type=text] {
     padding: 14px 21px 12px 40px;
   }
   /* css for section */
-  .section-about{
+  .section-home{
     /* darken image */
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
     url('../img/about.jpg');
@@ -51,6 +51,28 @@ input[type=text] {
     text-align: center;   
     vertical-align: middle;
     }
-    .section-about h1{
+    .section-home h1{
         text-transform: uppercase;
+    }
+    .section-map{
+        text-align: center;   
+    }
+    .frame {
+        margin-left: auto ;
+        margin-right: auto ;
+        position: relative;
+        width: 80%;
+        height :450px;
+        background-image: url('../img/map.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    /* .frame iframe{
+        width: 95%;
+        height :100%;
+    } */
+    .contact{
+        position: absolute;
+        width: 75%;
+        border: 1px solid black;
     }
