@@ -73,6 +73,28 @@
     } */
     .contact{
         position: absolute;
-        width: 75%;
+        width: 71%;
         border: 1px solid black;
+        margin-left: 14%;
+        margin-top: -5%;
+        background-color: white;
     }
+footer{
+    height: 300px;
+}
+footer > div{
+    width: 100%;
+    overflow: auto;
+}
+div.address{
+    float: left;
+    width: 30%;
+}
+div.promotion{
+    float: left;
+    width: 40%;
+}
+div.fanpage{
+    float: left;
+    width: 30%;
+}

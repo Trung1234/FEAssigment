@@ -1,4 +1,27 @@
 
+#errorName{
+    font-size: 15px;
+    color: red;   
+}
+#errorPassword{
+    font-size: 15px;
+    color: red;   
+}
+#success{
+    font-size: 20px;
+    color: rgb(94, 255, 0);  
+    margin-left: 40%;
+}
+.input{
+    width: 90%;
+    overflow: auto;
+}
+.input > span{
+    width: 15%;
+    font-weight: bold;
+    float: left;
+    margin-right: 5px;
+}
 ul {  
     margin-top: 21px;
     list-style: none;
