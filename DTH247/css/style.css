@@ -3,7 +3,11 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
+@font-face {
+    font-family: open;
+    src: url(open-sans.bold.ttf);
+  }
+  
 /* css for header */
 
 #heading {
@@ -81,7 +85,6 @@
 .contact {
     position: absolute;
     width: 85%;
-    border: 0.4px solid black;
     margin-left: 7%;
     margin-top: -25%;
     overflow: auto;
@@ -111,7 +114,7 @@
     padding: 5px;
     font-size: 15px;
     float: left;
-    width: 45%;
+    width: 46.5%;
     height: 30px;
     margin: 2% 1%;
 }
@@ -141,7 +144,6 @@
     text-align: left;
     font-weight: bold;
     font-size: 12px;
-
     text-transform: uppercase;
     float: left;
 }
@@ -150,28 +152,116 @@
     height: auto;
     width: 25%;
 }
-
+.addresscontact img{
+    margin-right: 10px;
+}
+.addresscontact p, label{
+    float: left;
+    margin: 10px;
+    color: white;
+}
+.addresscontact label{
+    font-family: open;
+    margin: 30px 10px;
+    width: 80%;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/* css for footer */
 footer {
     background-color: #F9F9F9;
-    height: 300px;
+    height: 350px;
+    
 }
 
+footer label{
+    color: black;
+    width: 80%;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 footer>div {
     width: 100%;
     overflow: auto;
+    margin-top: 5%;
 }
-
+#footer1{
+    height: 75%;
+}
 div.address {
+    padding-left: 5%; 
     float: left;
     width: 30%;
 }
-
+div.address .logo{
+    width: 100px;
+    height: 100px;
+    margin: 5px 10px;
+}
+div.address img{
+    margin-right: 10px;
+}
+div.address p{
+    width: 80%;
+    float: left;
+    color: black;
+    margin: 5px 10px;
+}
 div.promotion {
     float: left;
     width: 40%;
 }
-
+div.promotion p{
+    width: 80%;
+    float: left;
+    color: black;
+    margin: 5px 10px;
+}
 div.fanpage {
     float: left;
     width: 30%;
+}
+div.fanpage iframe{
+    width: 80%;
+    height: 120%;
+    border:none;
+    overflow:hidden;
+    
+}
+.footer2{
+    height: 25%;
+    border-top-width: black solid 1px;
+    overflow: auto;
+    position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
+}
+
+
+div.license img{
+    background-color: #0F8EE8;
+}
+
+.message{
+    background-color: #2F9DEA;
+    align-items: center;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    bottom: 16px;
+    display: flex;
+    height: 42px;
+    justify-content: center;
+    width: 125px;
+    /* padding-bottom: 2px; */
+    position: fixed;
+    right: 16px;
+    box-shadow: 1px 1px 2px 1px whitesmoke;
+    /* width: fit-content; */
 }
