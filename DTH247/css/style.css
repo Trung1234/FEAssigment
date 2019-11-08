@@ -10,13 +10,14 @@
     margin: 25px 50px;
     overflow: auto;
     text-align: center;
-
 }
+
 #heading .logo {
     float: left;
     vertical-align: middle;
     margin: 15px;
 }
+
 #heading .account {
     float: right;
     vertical-align: middle;
@@ -30,71 +31,147 @@
     border-radius: 40px;
     font-size: 15px;
     background-color: white;
-
     background-image: url('../img/search.jpg');
-    background-position: 97.5%; 
+    background-position: 97.5%;
     background-size: 20px;
     box-shadow: 1px 1px 2px 1px whitesmoke;
     /* box-shadow: 1px 1px 1px 1px grey; */
     background-repeat: no-repeat;
     padding: 14px 21px 12px 40px;
-  }
-  /* css for section */
-  .section-home{
+}
+
+/* css for section */
+
+.section-home {
     /* darken image */
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
-    url('../img/about.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/about.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     padding: 75px 50px;
     color: white;
-    text-align: center;   
+    text-align: center;
     vertical-align: middle;
-    }
-    .section-home h1{
-        text-transform: uppercase;
-    }
-    .section-map{
-        text-align: center;   
-    }
-    .frame {
-        margin-left: auto ;
-        margin-right: auto ;
-        position: relative;
-        width: 80%;
-        height :450px;
-        background-image: url('../img/map.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    /* .frame iframe{
+}
+
+.section-home h1 {
+    text-transform: uppercase;
+}
+
+.section-map {
+    text-align: center;
+    height: 600px;
+}
+
+.frame {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background-image: url('../img/map.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* .frame iframe{
         width: 95%;
         height :100%;
     } */
-    .contact{
-        position: absolute;
-        width: 71%;
-        border: 1px solid black;
-        margin-left: 14%;
-        margin-top: -5%;
-        background-color: white;
-    }
-footer{
+
+.contact {
+    position: absolute;
+    width: 85%;
+    border: 0.4px solid black;
+    margin-left: 7%;
+    margin-top: -25%;
+    overflow: auto;
+    height: fit-content;
+    background-color: #339FEA;
+}
+
+.inputcontact {
+    background-color: white;
+    float: left;
+    overflow: auto;
+    width: 75%;
+    padding: 1%;
+}
+.inputcontact p{
+    color: #3F3F3F;
+    width: 100%;
+    margin: 2% 1%;
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    float: left;
+}
+
+.inputcontact input {
+    padding: 5px;
+    font-size: 15px;
+    float: left;
+    width: 45%;
+    height: 30px;
+    margin: 2% 1%;
+}
+.inputcontact .phone{
+    margin: 2% 1%;
+    width: 95%;
+    float: left;
+}
+.inputcontact textarea  {
+    padding: 5px;
+    margin: 2% 1%;
+    font-size: 15px;
+    width: 95%;
+    height: 100px;
+    float: left;
+}
+.inputcontact button{
+    color: white;
+    width: 160px;
+    height: 50px;
+    background-color: #339FEA;
+    margin: 2% 1%;
+    text-align: center;
+    border: 0px;
+    border-radius: 5%;
+    padding-left: 5%;
+    text-align: left;
+    font-weight: bold;
+    font-size: 12px;
+
+    text-transform: uppercase;
+    float: left;
+}
+.addresscontact {
+    float: left;
+    height: auto;
+    width: 25%;
+}
+
+footer {
+    background-color: #F9F9F9;
     height: 300px;
 }
-footer > div{
+
+footer>div {
     width: 100%;
     overflow: auto;
 }
-div.address{
+
+div.address {
     float: left;
     width: 30%;
 }
-div.promotion{
+
+div.promotion {
     float: left;
     width: 40%;
 }
-div.fanpage{
+
+div.fanpage {
     float: left;
     width: 30%;
 }
