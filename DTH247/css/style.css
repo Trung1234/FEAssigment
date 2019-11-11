@@ -65,7 +65,10 @@
     text-align: center;
     height: 600px;
 }
-
+.section-news {
+    text-align: center;
+    height: 600px;
+}
 .frame {
     margin-left: auto;
     margin-right: auto;
@@ -172,7 +175,7 @@
 /* css for footer */
 footer {
     background-color: #F9F9F9;
-    height: 350px;
+    height: 400px;
     
 }
 
@@ -187,9 +190,9 @@ footer label{
 footer>div {
     width: 100%;
     overflow: auto;
-    margin-top: 5%;
+    padding-top: 5%;
 }
-#footer1{
+.footer1{
     height: 75%;
 }
 div.address {
@@ -236,17 +239,18 @@ div.fanpage iframe{
     height: 25%;
     border-top-width: black solid 1px;
     overflow: auto;
-    position: fixed;
+    
    left: 0;
    bottom: 0;
    width: 100%;
-   color: white;
+
    text-align: center;
 }
 
 
-div.license img{
+.footer2 img{
     background-color: #0F8EE8;
+    margin: 0px 5px;
 }
 
 .message{
@@ -258,7 +262,9 @@ div.license img{
     display: flex;
     height: 42px;
     justify-content: center;
-    width: 125px;
+    width: 135px;
+    padding: 0 5px;
+    color: white;
     /* padding-bottom: 2px; */
     position: fixed;
     right: 16px;
