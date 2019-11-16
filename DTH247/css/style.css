@@ -69,6 +69,44 @@
     text-align: center;
     height: 600px;
 }
+.category{
+    width: 30%;
+}
+.category .title{
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: bold;
+}
+.category p{
+    margin: 15px;
+}
+.category img{
+    margin: 0px 10px;
+    vertical-align: middle;
+}
+.latest{
+    overflow: auto;
+    width: 30%;
+}
+.latestimg{
+    width: 90%;
+}
+.latest > div{
+    float: left;
+    width: 45%;
+    overflow: auto;
+    height: 130px;
+}
+
+.latest .content{
+    width: 80%;
+    word-break: break-all;
+    font-weight: bold;
+    font-size: 20px;
+}
+/* .category span{
+    margin: 5px;
+} */
 .frame {
     margin-left: auto;
     margin-right: auto;
