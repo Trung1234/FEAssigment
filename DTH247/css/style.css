@@ -45,6 +45,60 @@
 }
 
 /* css for section */
+/* css for index page*/
+.section-import {
+    /* darken image */
+    background: linear-gradient( rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.5)), url('../img/banner_slide.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    padding: 180px 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+}
+.section-order-progress{
+    text-align: center;
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+    height: 400px;
+}
+.section-order-progress p{
+    margin-left: auto;
+    margin-right: auto;
+}
+.section-order-progress h1{
+    font-size: 25px;
+    margin: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#progress{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.section-import button{
+    color: black;
+    width: 160px;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    border: 0px;
+    margin: 20px 0px;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.section-import h1 {
+    margin: 10px 0px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
 
 .section-home {
     /* darken image */
@@ -167,7 +221,7 @@
     font-size: 20px;
 }
 .break{
-    width: 50px;
+    width: 70px;
     border: 10px;
     border-radius: 10px;
     height: 5px;
