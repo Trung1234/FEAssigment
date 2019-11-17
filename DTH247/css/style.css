@@ -60,11 +60,38 @@
 .section-home h1 {
     text-transform: uppercase;
 }
+.section-intro {
+    overflow: auto;
+    padding: 5%;
+    /* text-align: center; */
+    height: 1200px;
+}
+/* css for category */
+.category{
+    float: left;
+    width: 35%;
+}
+.title{
+    text-transform: uppercase;
+    font-size: large;
+    
+    font-weight: bold;
+}
 
+.category p.category{
+    float: left;
+    width: 80%;
+    margin: 10px 0px;
+}
+.category img{
+    margin: 0px 10px;
+    vertical-align: middle;
+}
 .section-map {
     text-align: center;
     height: 600px;
 }
+
 .section-news {
     overflow: auto;
     padding: 5%;
@@ -73,7 +100,7 @@
 }
 .listitem{
     float: right;
-    width: 60%;
+    width: 65%;
 }
 .listitem > div{
     float: left;
@@ -88,30 +115,12 @@
     font-weight: bold;
     font-size: 20px;
 }
-.category{
-    float: left;
-    width: 40%;
-}
-.title{
-    text-transform: uppercase;
-    font-size: large;
 
-    font-weight: bold;
-}
-
-.category p.category{
-    float: left;
-    width: 80%;
-    margin: 5px 0px;
-}
-.category img{
-    margin: 0px 10px;
-    vertical-align: middle;
-}
 .latest{
     float: left;
+    margin-top: 30px;
     overflow: auto;
-    width: 40%;
+    width: 35%;
 }
 .latestimg{
     width: 90%;
@@ -157,7 +166,7 @@
         width: 95%;
         height :100%;
     } */
-
+/* css for contact form */
 .contact {
     position: absolute;
     width: 85%;
