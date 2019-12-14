@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animals quiz</title>
+    <script src='jquery-1.10.2.min.js'></script>
+    <script src='js/secondpage.js'></script>
+    <link href='css/main.css' type='text/css' rel='StyleSheet' />
+<style type="text/css">
+    	.mark {
+			margin-left: -75px;	
+		}
+		@media only screen and (max-width: 1000px){
+			.mark {
+			  margin-left: -68px;
+			}
+		}
+    </style>
+    <script type='text/javascript'>
+        $(window).load(function () {
+            var count = 0;
+            $('.subtract').click(function () {
+                count++;
+                if (count == 1) {
+                    $('#sub')[0].play();
+                    var coin = $('.markCoin').text();
+                    if (coin >= 200) {
+                        var result = coin - 200;
+                        $('.markCoin').text(result);
+                        window.setTimeout(
+                            function () {
+                                window.location.href = 'sky30.html?score=' + result;
+                            },
+                            2000
+                        );
+                    }
+                }
+            });
+            $('.specColor').click(function () {
+                var scrore = $('.markCoin').text();
+                window.location.href = 'sky30.html?score=' + scrore;
+            });
+            $('.playagain').click(function () {
+                window.location.href = 'sky1.html';
+            });
+
+            $('.blue').one('click', function(){
+                $('#level')[0].play();
+                $('.blueIMG').css('display', 'block');
+                $('.blue').css('float', 'left');
+                $('.red, .green, .yellow').css('display', 'none');
+                $('.specColor').css('display', 'block');
+                $('.mainPicture').css('display', 'none');
+                $('.mainPictureDiv').slideDown(2000);
+                var coin = $('.markCoin').text();
+                var result = parseInt(coin) + 100;
+                $('.markCoin').text(result);
+            });
+            $('.red, .green, .yellow').click(function () {
+                $('#wrong')[0].play();
+                $('.red, .green, .yellow, .blue').css('display', 'none');
+                $('.plusMarkLose').text($('.markCoin').text());
+                $('.wrapper-right-menu').find('.subtract').contents().unwrap();
+                $('.playagain').css('display', 'block');
+                $('.mainPicture').css('display', 'none');
+                $('.mainPictureDivLose').slideDown(2000);
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <div class='websiteWrap'>
+        <div class='headerOuterWrap'>
+            <a class='mainLogo' href='index.html'>
+                <img src='images/home.png' class='homeLogo'>
+            </a>
+<a href="javascript:;" class="subtract">
+<img src="images/nexts.png" class="nextCoin"/>
+</a>
+            <div class='headerWrap' style='background-color: #8AC4CF;'>
+                <div class='headerCenter'>
+                    <img src='images/flower1.png' class='flowerIMG' /><span class='mark'>29</span>
+                </div>
+            </div>
+            <div class='mainMenuButton'>
+                <img src='images/Coin.png' class='leftCoin'><div class='markCoin'>0</div>
+            </div>
+        </div>
+        <div class='pageWrap homePageWrap'>
+            
+            <img src='sky/waxwing.jpg' class='mainPicture' style='border: 2px solid #8AC4CF;' />
+            <div class='mainPictureDiv'>
+                <img src='images/star1.png' class='startIMG' /><img src='images/star1.png' class='startIMG' /><img src='images/star1.png' class='startIMG' />
+                <p class='compliment'>You're unbelievable!</p>
+                <div class='mark-plus'>
+                    <img src='images/Coin.png' class='coin' />
+                    <div class='plusMark'>+100</div>
+                </div>
+             <a href='http://facebook.com/sharer.php?s=100&amp;p[url]=https://itunes.apple.com/us/app/animals-quiz-game/id1017375398?ls=1&amp;mt=8&[title]=I am playing Animals Quiz. Check it out!' class="shareSocial">
+                    <img src='images/facebook.png' class='facebook socialIMG'/>
+                </a>
+                <a href='http://twitter.com/share?text=I am playing Animals Quiz. Check it out!&url=https://itunes.apple.com/us/app/animals-quiz-game/id1017375398?ls=1&amp;mt=8' class="shareSocial">
+                    <img src='images/twitter.png' class='twitter socialIMG'/>
+                </a>
+</div>
+            <div class='mainPictureDivLose'>
+                <img src='images/star1.png' class='startIMG' /><img src='images/star1.png' class='startIMG' /><img src='images/star1.png' class='startIMG' />
+                <p class='compliment'>You Lose!</p>
+                <div class='mark-plus mark-plus-lose'>
+                    <img src='images/dollar.png' class='coin' />
+                    <div class='plusMark plusMarkLose'></div>
+                </div>
+            </div>
+            
+            <div class='wrapperButton'>
+                <a href='javascript:;' class='action-button shadow animate blue'>Waxwing<img src='images/price.png' class='priceIMG blueIMG' /></a>
+                <a href='javascript:;' class='action-button shadow animate red'>Heron<img src='images/price.png' class='priceIMG redIMG' /></a>
+                <a href='javascript:;' class='action-button shadow animate green'>Kingfisher<img src='images/price.png' class='priceIMG greenIMG' /></a>
+                <a href='javascript:;' class='action-button shadow animate yellow'>Pintail<img src='images/price.png' class='priceIMG yellowIMG' /></a>
+                <a href="javascript:;" class="action-button shadow animate specColor" style="display: none">
+                    <img src="images/next2.png" class="nextLast" /><div class="nextText">Next!</div>
+                </a>
+                 
+                <a href='javascript:;' class='action-button shadow animate playagain' style='display: none'>
+                    <img src='images/again.png' class='again' /><div class='againText'>Replay!</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <audio hidden='hidden' id='ding'>
+        <source src='sound/ding.mp3' type='audio/mpeg'>
+        Your browser does not support the audio element.
+    </audio>
+    <audio id='sub' preload='auto'>
+        <source src='sound/sub.mp3'></source>
+    </audio>
+<audio id='level' preload='auto'>
+        <source src='sound/level.mp3'></source>
+    </audio>
+    <audio id='wrong' preload='auto'>
+        <source src='sound/wrong.mp3'></source>
+    </audio>
+</body>
+</html>

@@ -1,0 +1,408 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pacifico', cursive;
+    font-size: 15px;
+    color: #666;
+    background: #fefefe;
+    line-height: 18px;
+    text-align: justify;
+    background: #f4f4f4;
+}
+@font-face {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../font/Pacifico.ttf) format('truetype');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+.subtract {
+	display:none;
+}
+
+.nextCoin {
+	  width: 70px;
+  position: absolute;
+  text-align: center;
+  margin-left: 20%;
+  top:1px;
+}
+
+.shareSocial {
+	text-decoration:none;
+}
+
+.animate {
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+.action-button {
+    position: relative;
+    padding: 50px 50px;
+    margin: 0px 0px 4% 0px;
+    border-radius: 10px;
+    font-family: 'Pacifico', cursive;
+    font-size: 75px;
+    color: #FFF;
+    text-decoration: none;
+    width: 36%;
+}
+.blue {
+    background-color: #3498DB;
+    border-bottom: 5px solid #2980B9;
+    text-shadow: 0px -2px #2980B9;
+    float: left;
+}
+.red {
+    background-color: #E74C3C;
+    border-bottom: 5px solid #BD3E31;
+    text-shadow: 0px -2px #BD3E31;
+    float: right;
+}
+.green {
+    background-color: #73C73C;
+    border-bottom: 5px solid #669644;
+    text-shadow: 0px -2px #669644;
+    float: left;
+}
+.yellow {
+    background-color: #F4C93A;
+    border-bottom: 5px solid #D1B358;
+    text-shadow: 0px -2px #D1B358;
+    float: right;
+}
+.specColor {
+    background-color: #F012BE;
+    border-bottom: 5px solid #CB4CA5;
+    text-shadow: 0px -2px #CB4CA5;
+    float: right;
+    padding: 24px 40px;
+    line-height: 70px;
+    display: none;
+}
+
+.playagain {
+    background-color: #FF7200;
+    border-bottom: 5px solid #CB4328;
+    text-shadow: 0px -2px #CB4328;
+    width: 80%;
+    margin-left: 22px;
+    padding: 50px 40px 60px 40px;
+    display: none;
+}
+.nextLast {
+    width: 80px;
+    position: absolute;
+    left: 10px;
+}
+.headerOuterWrap {
+    z-index: 9999;
+    height: 57px;
+    overflow: visible;
+}
+.headerWrap {
+    padding-left: 24px;
+    padding-right: 24px;
+    z-index: 9990;
+    height: 74px;
+}
+.pageWrap {
+    padding-top: 80px;
+    margin-bottom: 15px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.headerCenter {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.socialIMG {
+  width: 150px;
+  margin-top: 50px;
+}
+
+.flowerIMG {
+    width: 100px;
+    position: relative;
+    top: -35px;
+}
+.mainLogo {
+    margin-top: 9px;
+    position: absolute;
+    left: 20px;
+}
+.homeLogo {
+    height: auto;
+    width: 45%;
+}
+.mark {
+    position: absolute;
+    font-size: 60px;
+    color: white;
+    margin-left: -61px;
+    margin-top: 57px;
+    border-radius: 100%;
+    font-weight: bold;
+}
+.mainMenuButton {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    border-radius: 1em;
+    width: 150px;
+    height: 50px;
+    border: 1px solid white;
+}
+.leftCoin {
+    height: 60px;
+    width: auto;
+    margin-left: -15px;
+    margin-top: -4px;
+    padding-right: 5px;
+    float: left;
+}
+.markCoin {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    padding-top: 8px;
+}
+.mainPicture {
+    width: 70%;
+    height: auto;
+    padding: 5px;
+    background-color: white;
+}
+.mainPictureDiv {
+    width: 65%;
+    height: auto;
+    padding: 30px;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    border: 20px solid transparent;
+    border-image: url(../images/border.png) 30 30 round;
+    display: none;
+}
+.mainPictureDivLose {
+    width: 50%;
+    height: auto;
+    padding: 30px;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    border: 20px solid transparent;
+    border-image: url(../images/border.png) 30 30 round;
+    display: none;
+}
+.wrapperButton {
+    width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 400px;
+}
+
+.compliment {
+    font-family: 'Pacifico', cursive;
+    font-size: 100px;
+    color: #3498DB;
+    line-height: 120px;
+    margin: 10px 20px 30px 20px;
+}
+.plusMark {
+    font-family: 'Pacifico', cursive;
+    font-size: 140px;
+    color: #f7e100;
+    line-height: 40px;
+}
+.startIMG {
+    width: 80px;
+}
+.mark-plus {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.coin {
+    width: 90px;
+    height: 90px;
+}
+.priceIMG {
+    width: 150px;
+    position: absolute;
+    left: -60px;
+    top: -50px;
+    display: none;
+}
+.nextText {
+    padding-left: 50px;
+}
+.again {
+    width: 80px;
+    position: absolute;
+    left: 35px;
+    top: 28px;
+}
+.againText {
+    padding-left: 90px;
+}
+.plusMarkLose {
+    padding-left: 20px;
+}
+.mark-plus-lose {
+    width: 40%;
+}
+
+.wrapperButton a {
+	margin:0 auto;
+	margin-top:30px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+
+	.mainLogo {
+		display:none;
+	}
+	.nextCoin {
+  width: 60px;
+    margin-top: 9px;
+    position: absolute;
+      left: 5px;
+  margin-left: 0px;
+
+}
+	.homeLogo {
+  height: auto;
+  width: 35%;
+  margin: 5px 0px 0px 0px;
+}
+	.wrapperButton a {
+	margin-top:10px;
+}
+
+.socialIMG {
+	width:60px;
+	margin-top:15px;
+}
+    .flowerIMG {
+        width: 90px;
+    }
+    .mark {
+        margin-left: -60px;
+        margin-top: 45px;
+    }
+   
+	.btnShare {
+		
+	}
+    .action-button {
+        display: block;
+        font-size: 50px;
+        padding: 0px;
+        width: 200px;
+        height: 60px;
+        line-height: 65px;
+		  font-size: 40px !important;
+    }
+    .wrapperButton {
+        margin-top: 40px;
+        margin-bottom: 50px;
+        width: 67%;
+    }
+    .blue, .red, .green, .yellow, .specColor, .playagain {
+        float: inherit !important;
+    }
+    .mainPicture {
+        border: 6px solid #47bc76;
+        padding: 5px;
+		width:90%;
+    }
+    .nextLast {
+        width: 50px;
+        left: 5px;
+        top: 5px;
+    }
+    .againText {
+        padding-left: 45px;
+    }
+
+    .again {
+        left: 1px;
+        width: 50px;
+        top: 5px;
+    }
+    .playagain {
+        padding: 0px;
+        margin-left: 10px;
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .mainMenuButton {
+        top: 20px;
+        width: 80px;
+        height: auto;
+        right: 10px;
+    }
+    .leftCoin {
+        height: 35px;
+        padding-right: 2px;
+    }
+    .markCoin {
+        font-size: 30px;
+        padding-top: 3px;
+    }
+    .mainLogo {
+        left: 10px;
+    }
+    .twitter {
+        margin-top: 10px;
+    }
+    .priceIMG {
+        width: 100px;
+        left: -40px;
+        top: -40px;
+    }
+    .mainPictureDiv {
+        padding: 15px;
+        border: 10px solid transparent;
+        border-image: url(../images/border.png) 30 30 round;
+		width:80%;
+    }
+    .mainPictureDivLose {
+        padding: 15px;
+        border: 10px solid transparent;
+        border-image: url(../images/border.png) 30 30 round;
+		width:80%;
+    }
+    .plusMarkLose {
+        padding-left: 10px;
+    }
+    .startIMG {
+        width: 40px;
+    }
+    .compliment {
+        font-size: 40px;
+        line-height: 60px;
+        margin: 10px 0px 20px 0px;
+    }
+    .coin {
+        width: 45px;
+        height: 45px;
+    }
+    .plusMark {
+        font-size: 40px;
+        line-height: 30px;
+    }
+	
+	.specColor {
+		clear: both;
+	}
+}

@@ -1,0 +1,93 @@
+body {
+    background-color: #1cbbb4;
+    margin: 0;
+    padding: 0;
+    font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    color: #666;
+    line-height: 18px;
+}
+.homePageWrapper {
+    padding-bottom: 60px;
+}
+.sectionWrapper {
+    padding-top: 50px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    color: #fff;
+}
+h2 {
+    font-size: 18px;
+    line-height: 21px;
+    padding-bottom: 1px;
+    font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.websiteWrapper {
+    text-align: center;
+    padding-bottom: 27%;
+}
+.imgIcon {
+    height: auto;
+    max-width: 60%;
+}
+.blockImage {
+    height: auto;
+    max-width: 33.3%;
+    float: left;
+}
+#animalTextPic {
+    height: auto;
+    max-width: 30%;
+}
+.imgText1 {
+    height: auto;
+    max-width: 60%;
+    margin-top: 6%;
+}
+.imgText2 {
+    height: auto;
+    max-width: 60%;
+    margin-top: 1%;
+}
+.imgText3 {
+    height: auto;
+    max-width: 60%;
+    margin-top: 2%;
+}
+.divFirst {
+    margin-bottom: 5%;
+}
+@media only screen and (max-width: 1000px) {
+    #animalTextPic {
+        max-width: 70% !important;
+        margin-bottom: 50px;
+    }
+    .blockImage {
+        height: auto;
+        max-width: 60%;
+        float: none;
+        margin: 0 auto;
+    }
+    .imgIcon {
+        height: auto;
+        max-width: 70%;
+    }
+    .imgText {
+        height: auto;
+        max-width: 90%;
+        padding: 0 0 15% 0;
+    }
+    .imgText3 {
+        padding: 0 0 10% 0 !important;
+    }
+    .websiteWrapper {
+        padding-bottom: 0%;
+    }
+    .lion {
+        width: 50%;
+    }
+    .sectionWrapper {
+        padding-top: 120px;
+    }
+}
