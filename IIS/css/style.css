@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    padding: 0 5%;
+    background-color: #E0FFFF;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the header */
+  header {
+    padding: 10px 45px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+  }
+  header h2{
+      color: #2A2A2A;
+  }
+  header p{
+      text-align: left;
+      color: #888888;
+      font-style: italic;
+  }
+  /* Create two columns/boxes that floats next to each other */
+  nav {
+    width: 100%;
+    height: 80px; 
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+  }
+  nav li{
+    padding: 10px;
+    margin: 0px 4px;
+    background: rgb(61, 57, 57);
+    display: inline-block; 
+  }
+  nav a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #6F9D41;
+  }
+  nav a:hover{
+    color: black;
+    cursor: pointer;
+  }
+  article {
+    float: left;
+    padding: 4px 45px;
+    width: 100%;
+  }
+  .heading{
+    color: #923030;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-shadow: 2px 2px 4px #B3B2B2;
+  }
+  .title{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .video-infom{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #AB5050;
+    padding: 15px 20%;
+    font-style: italic;
+    font-weight: bold;
+    color: #AB5050;
+    background-color: #F7E9E9;
+  }
+  .feedback-form{
+    position:relative;
+    border: 2px solid #B3B2B2;
+    border-radius: 10px;
+    height: 200px;
+    background-color: #EEEEEE;
+    margin-bottom: 50px;
+    box-shadow: 10px 10px 5px #B3B2B2;
+  }
+  .send{
+    padding: 5px;
+    border: grey solid 1px;
+    position: absolute;
+    left: 11px;
+    bottom:  10px;
+  }
+  /* Divide page to 2 columns*/
+  .col{
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+}
+.feedback-form input{
+    float: right;
+}
+.feedback-form label{
+  float: left;
+  }
+  /* Style the footer */
+  footer {
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+  }
+  footer p{
+      color: #8E9090;
+  }
+
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    
+  }
