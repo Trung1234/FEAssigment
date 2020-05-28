@@ -60,6 +60,10 @@
     text-decoration: underline;
     text-shadow: 2px 2px 4px #B3B2B2;
   }
+  .home-img{
+    width: 60%;
+    height: 333;
+  }
   .title{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -70,17 +74,18 @@
     margin-top: 20px;
     margin-bottom: 20px;
     border: 2px solid #AB5050;
-    padding: 15px 20%;
+    padding: 1% 5%;
     font-style: italic;
     font-weight: bold;
     color: #AB5050;
+    width: 40%;
     background-color: #F7E9E9;
   }
   .feedback-form{
     position:relative;
     border: 2px solid #B3B2B2;
     border-radius: 10px;
-    height: 200px;
+    height: 280px;
     background-color: #EEEEEE;
     margin-bottom: 50px;
     box-shadow: 10px 10px 5px #B3B2B2;
@@ -92,7 +97,7 @@
     left: 11px;
     bottom:  10px;
   }
-  /* Divide page to 2 columns*/
+
   .col{
     width: 30%;
     margin: 10px;
@@ -115,7 +120,40 @@
       color: #8E9090;
   }
 
-  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-  @media (max-width: 600px) {
-    
+ /* responsive */
+ @media screen and (max-width: 992px){
+  .col{
+    width: 60%;
+    margin: 10px;
+    padding: 10px;
   }
+  nav li{
+    padding: 10px;
+    margin: 0px 4px;
+    width: 90%;
+    display: inline-block; 
+  }
+  nav {
+    height: 180px; 
+  }
+.video-infom{
+  width: 80%;
+}
+}
+@media screen and (max-width: 600px){
+  .video-infom{
+    width: 100%;
+  }
+  .col{
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+    height: fit-content;
+  }
+  .col input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    float: left;
+    width: 80%;
+  }
+}
