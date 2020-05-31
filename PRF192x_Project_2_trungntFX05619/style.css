@@ -1,0 +1,32 @@
+
+.container{
+    width: 640px; /*can be in percentage also.*/
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+.container > div{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container input{
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+  background-color: #4CAF50;
+  border: solid 2px lightblue;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+}
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Form đăng ký </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <form>
+        <div class="container">
+            <h1>Form đăng ký</h1>
+            <hr>
+            <div class="col">
+                <label for="surname"><b>Họ <span class="important">*</span></b></label>
+                <input type="text" placeholder="Nhập  họ" name="surname" id="surname">
+            </div>
+            <div class="col">
+                <label for="name"><b>Tên <span class="important">*</span></b></label>
+                <input type="text" placeholder="Nhập tên" name="name" id="name">
+            </div>
+            <div class="row">
+                <label for="email"><b>Email <span class="important">*</span></b></label>
+                <input type="text" placeholder="Nhập địa chỉ Email" name="email" id="email">
+            </div>
+            <div class="col">
+                <label for="psw"><b>Mật khẩu (6-30 ký tự) <span class="important">*</span></b></label>
+                <input type="password" placeholder="Mật khẩu" name="psw" id="pass">
+            </div>
+            <div class="col">
+                <label for="psw"><b>Nhập lại mật khẩu <span class="important">*</span></b></label>
+                <input type="password" placeholder="Xác nhận mật khẩu" name="repsw" id="repass">
+            </div>
+            <div class="col">
+                <div class="col">
+                    <label for="years"><b>Năm sinh <span class="important">*</span< /b></label>
+                </div>
+                <div class="col">
+                    <select name="years" id="years">
+                        <option value="" selected="selected" style="display:none">-Chọn-</option>
+                        <option value="1990">1990</option>
+                        <option value="1991">1991</option>
+                        <option value="1992">1992</option>
+                        <option value="1993">1993</option>
+                        <option value="1994">1994</option>
+                        <option value="1995">1995</option>
+                        <option value="1996">1996</option>
+                        <option value="1997">1997</option>
+                        <option value="1998">1998</option>
+                        <option value="1999">1999</option>
+                        <option value="2000">2000</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col">
+                    <label for="genders"><b>Giới tính</b></label>
+                </div>
+                <div class="col">
+                    <div class="radio">
+                        <label><input type="radio" name="gender" value="male">Nam<span></span></label>
+                        <label><input type="radio" name="gender" value="female">Nữ<span></span></label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="col">
+                    <label for="years"><b>Thành phố <span class="important">*</span< /b></label>
+                </div>
+                <div class="col">
+                    <select name="years" id="city">
+                        <option value="" selected="selected" style="display:none">-Chọn-</option>
+                        <option value="Hà Nội">Hà Nội</option>
+                        <option value="Đà Nẵng">Đà Nẵng</option>
+                        <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                    </select>
+                </div>
+
+            </div>
+            <hr>
+            <div class="center">
+                <button type="button" class="registerbtn" onclick="register()">Đăng kí</button>
+            </div>
+        </div>
+
+
+    </form>
+    <script src="myScript.js"></script>
+</body>
+
+</html>

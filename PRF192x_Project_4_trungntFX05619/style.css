@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+}
+body div{
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+/* Style for controls */
+.control{
+  background-color: aqua;
+  border-radius: 100%;
+  border: 0px;
+  color: black;
+  cursor: pointer;
+  margin: 20px;
+  opacity: 0.6;
+  padding: 15px 20px;
+}
+
+.active{
+  background-color: blue;
+  color: white;
+  border-radius: 100%;
+  border: 0px;
+  cursor: pointer;
+  margin: 20px;
+  opacity: 0.6;
+  padding: 15px 20px;
+}
+
+
+/* 4 control side by side */
+.row {
+  margin-left: 40%;
+  float: left;
+}
+
+/* Add a transparency effect */
+
+
+.control:hover {
+  opacity: 1;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 95%;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(12, 11, 11);
+  font-weight: bold;
+  font-size: 48px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 5%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
