@@ -13,6 +13,9 @@ function register(){
     var birthyear = year.options[year.selectedIndex].value;
     var citys = document.getElementById('city');
     var city = citys.options[citys.selectedIndex].value;
+    var isMale = document.getElementById('male').checked;
+    var isFemale = document.getElementById('female').checked;
+
     // xử lý logic
     if(isEmpty(surname)){
         alert('Chưa nhập họ');
@@ -55,8 +58,13 @@ function register(){
                                                     alert('Hãy chọn  thành phố');
                                                 }
                                                 else{
-                                                    alert('Đăng kí thành công');
-                                                }
+                                                    if(!isFemale && !isMale){
+                                                        alert('Hãy chọn  giới tính');
+                                                    }
+                                                    else{
+                                                        alert('Đăng kí thành công');
+                                                    }
+                                                }                                               
                                             }
                                         }
                                     }
