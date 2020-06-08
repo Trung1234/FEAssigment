@@ -57,7 +57,7 @@ function register(){
                                                     alert('Hãy chọn  thành phố');
                                                 }
                                                 else{
-                                                    if(!checkRaidoGender()){
+                                                    if(!checkRadioGender()){
                                                         alert('Hãy chọn  giới tính');
                                                     }
                                                     else{
@@ -76,7 +76,7 @@ function register(){
         }       
     }
 }
-function checkRaidoGender(){
+function checkRadioGender(){
     var radios = document.getElementsByName('gender');
     for (var i = 0, length = radios.length; i < length; i++) {
         if (radios[i].checked) {
