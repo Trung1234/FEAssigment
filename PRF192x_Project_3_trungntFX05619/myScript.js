@@ -13,8 +13,7 @@ function register(){
     var birthyear = year.options[year.selectedIndex].value;
     var citys = document.getElementById('city');
     var city = citys.options[citys.selectedIndex].value;
-    var isMale = document.getElementById('male').checked;
-    var isFemale = document.getElementById('female').checked;
+    
 
     // xử lý logic
     if(isEmpty(surname)){
@@ -58,7 +57,7 @@ function register(){
                                                     alert('Hãy chọn  thành phố');
                                                 }
                                                 else{
-                                                    if(!isFemale && !isMale){
+                                                    if(!checkRaidoGender()){
                                                         alert('Hãy chọn  giới tính');
                                                     }
                                                     else{
@@ -77,7 +76,16 @@ function register(){
         }       
     }
 }
-
+function checkRaidoGender(){
+    var radios = document.getElementsByName('gender');
+    for (var i = 0, length = radios.length; i < length; i++) {
+        if (radios[i].checked) {
+          // do whatever you want with the checked radio
+          return true;
+        }
+    }
+    return false;
+}
 // validate email dùng regex
 function validateEmail(inputText)
 {
